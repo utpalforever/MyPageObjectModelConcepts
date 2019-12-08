@@ -2,6 +2,7 @@ package freeCrm.pages;
 
 import java.io.IOException;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -15,7 +16,11 @@ public class LoginPage extends BaseClassTest{
 	
 	//Page Factory/Object Repository
 	
-	@FindBy(xpath="//*[@id=\"ui\"]/div/div/form/div/div[3]")
+	
+	@FindBy(xpath="//a[contains(@class, 'btn btn-primary btn-xs-2 btn-shadow')]")
+    WebElement beforeLoginBtn;
+	
+	@FindBy(xpath="//div[text()='Login']")
     WebElement loginBtn;
 	
 	@FindBy(name="email")
@@ -58,9 +63,11 @@ public class LoginPage extends BaseClassTest{
 	
     public HomePage login(String un, String pwd) throws IOException {
 		
-    	loginBtn.click();
+    	beforeLoginBtn.click();
     	email.sendKeys(un);
     	password.sendKeys(pwd);
+    	loginBtn.click();
+    	
     	
         return new HomePage();
 	}

@@ -67,7 +67,7 @@ public class HomePage extends BaseClassTest {
    }
    
 	
-	public ContactsPage clickOncontactsLink() throws IOException {
+	public ContactsPage clickOnContactsLink() throws IOException {
 	 
 	  contactsLink.click();
 	 
@@ -77,18 +77,6 @@ public class HomePage extends BaseClassTest {
 	  }
 	 
 
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	
 

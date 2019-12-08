@@ -9,6 +9,7 @@ import org.testng.annotations.Test;
 
 import freeCrm.base.BaseClassTest;
 import freeCrm.pages.CalenderPage;
+import freeCrm.pages.ContactsPage;
 import freeCrm.pages.HomePage;
 import freeCrm.pages.LoginPage;
 import freeCrm.utility.TestUtilClass;
@@ -19,6 +20,7 @@ public class HomePageTest extends BaseClassTest {
 	HomePage homepage;
 	LoginPage loginpage;
 	TestUtilClass testUtilClass;
+	ContactsPage contactspage;
 	public HomePageTest() throws IOException {
 		super();
 		
@@ -55,10 +57,10 @@ public class HomePageTest extends BaseClassTest {
 		Assert.assertTrue(homepage.validatecompaniesLink());
 		
 	}
-	@Test
-	public void clickOncalendarLinkTest() throws IOException {
+	@Test(priority=4)
+	public void clickOncontactsLinkTest() throws IOException {
 		//testUtilClass.switchToFrame();
-		calendarPage=homepage.clickOnCalendarLink();
+		contactspage=homepage.clickOnContactsLink(); 
 		
 	}
 	
@@ -66,17 +68,6 @@ public class HomePageTest extends BaseClassTest {
 	public void tearDown() {
 		driver.quit();
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	
 }
