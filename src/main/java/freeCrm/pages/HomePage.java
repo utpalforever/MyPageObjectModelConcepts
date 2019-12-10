@@ -32,52 +32,47 @@ public class HomePage extends BaseClassTest {
 	// Actions
 
 	public String validateHomePageTitle() {
-		
+
 		return driver.getTitle();
 
 	}
-	
-   public boolean validatecalendarLink() {
-		
+
+	public boolean validatecalendarLink() {
+
 		return calendarLink.isDisplayed();
 	}
-   
-   public boolean validatecontactsLink() {
-		
+	
+
+	public boolean validatecontactsLink() {
+
 		return contactsLink.isDisplayed();
 	}
-   
-   public boolean validatecompaniesLink() {
-		
+
+	public boolean validatecompaniesLink() {
+
 		return companiesLink.isDisplayed();
 	}
-   
-   public boolean validateuserNameText() {
-		
+
+	public boolean validateuserNameText() {
+
 		return userNameText.isDisplayed();
 	}
-   
-   public CalenderPage clickOnCalendarLink() throws IOException {
-	   
-	   calendarLink.click();
-	   
-	   return new CalenderPage();
-	   
-	   
-   }
-   
-	
-	public ContactsPage clickOnContactsLink() throws IOException {
-	 
-	  contactsLink.click();
-	 
-	  return new ContactsPage();
-			  
-	 
-	  }
-	 
 
-	
-	
+	public CalenderPage clickOnCalendarLink() throws IOException {
+
+		calendarLink.click();
+
+		return new CalenderPage();
+
+	}
+
+	public ContactsPage clickOnContactsLink() throws IOException {
+
+		contactsLink.click();
+		driver.navigate().refresh();
+
+		return new ContactsPage();
+
+	}
 
 }
