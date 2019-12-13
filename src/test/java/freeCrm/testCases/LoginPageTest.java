@@ -65,16 +65,5 @@ public class LoginPageTest extends BaseClassTest {
 	
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 
 }
