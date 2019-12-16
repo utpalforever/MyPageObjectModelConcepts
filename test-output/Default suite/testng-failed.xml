@@ -5,7 +5,7 @@
     <classes>
       <class name="freeCrm.testCases.ContactsPageTest">
         <methods>
-          <include name="checkboxContactsByNameTest"/>
+          <include name="validateContactsPageLabelTest"/>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
