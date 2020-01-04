@@ -3,13 +3,16 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="freeCrm.testCases.ContactsPageTest">
+      <class name="freeCrm.testCases.HomePageTest">
         <methods>
-          <include name="validateContactsPageLabelTest"/>
+          <include name="clickOncontactsLinkTest"/>
+          <include name="calendarLinkTest"/>
+          <include name="homePageTitleTest"/>
+          <include name="userNameTextTest"/>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- freeCrm.testCases.ContactsPageTest -->
+      </class> <!-- freeCrm.testCases.HomePageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
