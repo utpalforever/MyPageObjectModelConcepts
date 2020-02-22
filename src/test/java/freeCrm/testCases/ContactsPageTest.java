@@ -28,6 +28,7 @@ public class ContactsPageTest extends BaseClassTest {
 		super();
 	}
 
+	///push
 	@BeforeMethod
 	public void setUp() throws IOException {
 		init();
